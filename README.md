@@ -15,6 +15,7 @@ http://ngcordova.com/docs/plugins/camera/
 
 ``` $ cordova platform list ```
 
+```
 Installed platforms:
   android 5.1.1
   ios 3.8.0
@@ -25,6 +26,7 @@ Available platforms:
   firefoxos ~3.6.3
   osx ~4.0.1
   webos ~3.7.0
+```
 
 If this shows that ios is onlyi 3.8.0 update ios.
 
@@ -32,6 +34,7 @@ If this shows that ios is onlyi 3.8.0 update ios.
 
 ``` $ cordova platform list ```
 
+```
 Installed platforms:
   android 5.1.1
   ios 4.1.1
@@ -42,6 +45,7 @@ Available platforms:
   firefoxos ~3.6.3
   osx ~4.0.1
   webos ~3.7.0
+```
 
 ``` $ cordova plugin add cordova-plugin-camera ```
 
