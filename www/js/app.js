@@ -5,6 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic', 'ngCordova'])
 
+// http://ngcordova.com/docs/plugins/camera/
 .controller("ExampleController", function($scope, $cordovaCamera) {
   $scope.takePhoto = function() {
     var options = {

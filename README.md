@@ -1,4 +1,9 @@
-# CordovaExample
+# IonicCameraPluginDemo
+
+## Initial Setup
+Mostly from: http://sourcefreeze.com/cordova-camera-plugin-example-using-ionic-framework/
+
+http://ionicframework.com/getting-started/
 
 I was having a problem getting the iOS build to work for the CameraPluginDemo app.  I created this project from scratch and got the iOS build to work.
 
