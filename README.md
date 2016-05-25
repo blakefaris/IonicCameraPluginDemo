@@ -79,8 +79,8 @@ CDVCommandQueue executePending FAILED pluginJSON Camera takePicture
 ```
 
 ##### Solution #####
-From: rm -rf platforms/ios
 http://stackoverflow.com/questions/20326504/cordova-ios-plugins-fail-after-building-unless-i-remove-platform-and-plugin-jso
+
 1. rm -rf platforms/ios
 1. rm plugins/ios.json
 1. cordova platforms add ios
