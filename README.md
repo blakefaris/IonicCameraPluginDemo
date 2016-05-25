@@ -1,6 +1,15 @@
 # IonicCameraPluginDemo
 
-## Initial Setup
+## Setup
+1. ```$ git clone git@github.com:blakefaris/IonicCameraPluginDemo.git```
+1. ```$ cd IonicCameraPluginDemo```
+1. ```$ cordova plugin add cordova-plugin-camera```  
+1. ```$ cordova platforms add ios```
+1. ```$ cordova build ios```
+1. Refer to **Running on iPhone**
+
+
+## My Initial Project Setup
 Mostly from: http://sourcefreeze.com/cordova-camera-plugin-example-using-ionic-framework/
 
 http://ionicframework.com/getting-started/
@@ -63,7 +72,7 @@ Building of iOS should work.
 
 ### Running on iPhone ###
 1. Use a USB cable and connect your iPhone to your computer
-1. Open **CordovaExample/platforms/ios/CordovaExample.xcodeproj**
+1. Open **/platforms/ios/CordovaExample.xcodeproj**
 1. For devices choose your iPhone
 1. Click **Run**
 
@@ -86,9 +95,4 @@ http://stackoverflow.com/questions/20326504/cordova-ios-plugins-fail-after-build
 1. cordova platforms add ios
 1. cordova build ios
 
-A better solution is do the recommend 'config.xml' changes.
-
-
-
-
-    
+A better solution is do the recommended 'config.xml' changes.
