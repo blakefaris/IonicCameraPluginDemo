@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.cordovaexample835176" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>CordovaExample</name>
+  <name>IonicCameraPluginDemo</name>
   <description>
         An Ionic Framework and Cordova project.
+        Demonstrates the use of the Cordova camera plugin by show how to take or
+        choose a photo.  It then displays the given photo.
     </description>
-  <author email="you@example.com" href="http://example.com.com/">
-      Your Name Here
+  <author email="blakefaris@gmail.com" href="http://www.blakefaris.com/">
+      Blake Faris
     </author>
   <content src="index.html"/>
   <access origin="*"/>
