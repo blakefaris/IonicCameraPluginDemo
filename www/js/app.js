@@ -10,7 +10,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
   $scope.takePhoto = function() {
     var options = {
       quality: 75,
-      destinationType: Camera.DestinationType.DATA_URL,
+      destinationType: Camera.DestinationType.FILE_URI,
       sourceType: Camera.PictureSourceType.CAMERA,
       allowEdit: true,
       encodingType: Camera.EncodingType.JPEG,
@@ -21,7 +21,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
     };
 
     $cordovaCamera.getPicture(options).then(function(imageData) {
-      $scope.imgURI = "data:image/jpeg;base64," + imageData;
+      $scope.imgURI = imageData;
     }, function(err) {
       // An error occured. Show a message to the user
     });
@@ -30,7 +30,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
   $scope.choosePhoto = function() {
     var options = {
       quality: 75,
-      destinationType: Camera.DestinationType.DATA_URL,
+      destinationType: Camera.DestinationType.FILE_URI,
       sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
       allowEdit: true,
       encodingType: Camera.EncodingType.JPEG,
@@ -41,7 +41,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
     };
 
     $cordovaCamera.getPicture(options).then(function(imageData) {
-      $scope.imgURI = "data:image/jpeg;base64," + imageData;
+      $scope.imgURI = imageData;
     }, function(err) {
       // An error occured. Show a message to the user
     });
