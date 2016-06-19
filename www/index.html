@@ -34,7 +34,15 @@
         <button class="button button-full button-assertive" ng-click="choosePhoto()">
           Choose Photo
         </button>
+        <button class="button button-full button-assertive" ng-click="chooseVideo()">
+          Choose Video
+        </button>
         <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+        <div ng-if="videoURI !== undefined">
+          <video width="300" height="200" preload controls>
+            <source ng-src="{{videoURI}}" />
+          </video>
+        </div>
       </ion-content>
     </ion-pane>
   </body>

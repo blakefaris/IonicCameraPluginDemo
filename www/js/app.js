@@ -34,6 +34,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
       sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
       allowEdit: true,
       encodingType: Camera.EncodingType.JPEG,
+      mediaType: Camera.MediaType.PICTURE,
       targetWidth: 300,
       targetHeight: 300,
       popoverOptions: CameraPopoverOptions,
@@ -46,4 +47,26 @@ angular.module('starter', ['ionic', 'ngCordova'])
       // An error occured. Show a message to the user
     });
   }
+
+  $scope.chooseVideo = function() {
+    var options = {
+      quality: 75,
+      destinationType: Camera.DestinationType.FILE_URI,
+      sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+      allowEdit: true,
+      encodingType: Camera.EncodingType.JPEG,
+      mediaType: Camera.MediaType.VIDEO,
+      targetWidth: 300,
+      targetHeight: 300,
+      popoverOptions: CameraPopoverOptions,
+      saveToPhotoAlbum: false
+    };
+
+    $cordovaCamera.getPicture(options).then(function(videoData) {
+      $scope.videoURI = videoData;
+    }, function(err) {
+      // An error occured. Show a message to the user
+    });
+  }
+
 });
