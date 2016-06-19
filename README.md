@@ -14,8 +14,6 @@ Mostly from: http://sourcefreeze.com/cordova-camera-plugin-example-using-ionic-f
 
 http://ionicframework.com/getting-started/
 
-I was having a problem getting the iOS build to work for the CameraPluginDemo app.  I created this project from scratch and got the iOS build to work.
-
 ## Adding Cordova Camera Support
 
 http://ngcordova.com/docs/install/
@@ -72,7 +70,7 @@ Building of iOS should work.
 
 ### Running on iPhone ###
 1. Use a USB cable and connect your iPhone to your computer
-1. Open **/platforms/ios/CordovaExample.xcodeproj**
+1. Open **/platforms/ios/IonicCameraPluginDemo.xcodeproj**
 1. For devices choose your iPhone
 1. Click **Run**
 
