@@ -1,5 +1,6 @@
 # IonicCameraPluginDemo
 Ionic app that uses the Cordova Camera plugin to take a take or chose a photo then display the taken/chosen photo.
+This app also allows for choosing and playing back a video.
 
 ## Setup
 1. ```$ git clone git@github.com:blakefaris/IonicCameraPluginDemo.git```
