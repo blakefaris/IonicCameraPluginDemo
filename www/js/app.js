@@ -68,7 +68,8 @@ angular.module('starter', ['ionic', 'ngCordova'])
     $cordovaCamera.getPicture(options).then(function(videoData) {
       $scope.videoURI = videoData;
     }, function(err) {
-      $scope.videoURI = tempVideoPath;
+      // User probably hit cancel
+      $scope.videoURI = tempVideoURI;
     });
   }
 
