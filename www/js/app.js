@@ -62,10 +62,13 @@ angular.module('starter', ['ionic', 'ngCordova'])
       saveToPhotoAlbum: false
     };
 
+    var tempVideoURI = $scope.videoURI;
+    $scope.videoURI = undefined;
+
     $cordovaCamera.getPicture(options).then(function(videoData) {
       $scope.videoURI = videoData;
     }, function(err) {
-      // An error occured. Show a message to the user
+      $scope.videoURI = tempVideoPath;
     });
   }
 
